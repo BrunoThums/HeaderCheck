@@ -57,7 +57,7 @@ def check_headers(url, show_all_headers=False, show_report=True, debug=False, sh
             normal_header = None
             missed_header = None
             if not show_unreachables_URLs: print(f"\nAnalyzing {url}:\n")
-            response = session.get(url, headers=headers, timeout=5, verify=False)
+            response = session.get(url, headers=headers, timeout=10, verify=False)
             if not show_unreachables_URLs: 
                 status_code = response.status_code
                 status_code_reason = response.reason
