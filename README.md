@@ -19,11 +19,11 @@ Só precisa ajustar o "local" do script, dentro dele. Porque senão ele não con
 - hc single_URL-->
 
 ## What it can do?
-- (Obviously) check some headers of a single URL or a file of URLs
-- Convert URL from http to https (required for sslscan)
+- (Obviously) check some headers of a single URL or a file of URLs []
+- Convert URL from http to https
 - Add https:// to every URL (if there's none)
-- Add port 80 and 443 to URL that doesn't contain a port especified
-- Check for duplicates in file
+- Add port 80 and 443 to URL that doesn't contain a port especified (optionally)
+- Get rid off for duplicates in file
 - Show which URL's don't have:
   - Content-Security-Police
   - Strict-Transport-Security
@@ -32,13 +32,14 @@ Só precisa ajustar o "local" do script, dentro dele. Porque senão ele não con
 - You can run it anywhere
 <!-- - Automatically check if sslscan is installed and. If not, then install -->
 
-## Useful links:
-- https://pypi.org/project/termcolor/
+## Useful links and tips:
+- [termcolor lib]([url](https://pypi.org/project/termcolor/))
+- [ASCII Generator]([url](https://patorjk.com/software/taag/))
 
 ## TO-DO
 - Remove www from URLs
-- Optionally put, by argument, the addition of port 80 and 443 at the end of the URL
-- Add custom message for invalid host or error
+- Add (more) custom message for invalid host or error
+- Check for duplicates in URL report error list
 
 
 
