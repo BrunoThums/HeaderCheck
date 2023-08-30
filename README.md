@@ -43,6 +43,6 @@ Só precisa ajustar o "local" do script, dentro dele. Porque senão ele não con
 - Check for duplicates in URL report error list
 
 ## How to remove
-- `sudo rm /usr/bin/hc; sudo rm /usr/bin/hc_c`
+- `sudo rm /usr/bin/hc; sudo rm /usr/bin/hc_h`
 
 
