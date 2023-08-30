@@ -16,8 +16,8 @@ Só precisa ajustar o "local" do script, dentro dele. Porque senão ele não con
   - Don't worry about directories
 - hc file_with_urls
 - hc single_URL
-- OBS: if there's some URLs with errors, save to a file and run:
-  - `hc_h file`
+- OBS: if there's some URLs with errors, save to a file and run the auxiliary script:
+  - `hc_h file` (the extra data or status code come from redirects, stay aware)
 
 ## What it can do?
 - (Obviously) check some headers of a single URL or a file of URLs []
@@ -29,9 +29,16 @@ Só precisa ajustar o "local" do script, dentro dele. Porque senão ele não con
   - Content-Security-Police
   - Strict-Transport-Security
 
-### Other funcionalities
-- You can run it anywhere
-<!-- - Automatically check if sslscan is installed and. If not, then install -->
+### Parameters
+- `--all-headers` or `-h` -> show all headers (yep, like a normal response header)
+- `--no-ports` or `-np` -> don't add ports 80 and 443, let it handle automatically
+- `--no-csp-hsts` or `-nr` -> don't verify CSP or HSTS
+- `--debug` or `-d` -> show detailed errors
+- `--show-instant-errors` or `-si` -> show, at the instant, connection errors
+- All parameters are **False** by default
+
+## Notes
+- As it is an automated software, there may be inconsistencies. It is interesting to print the headers directly in the browser. The tool is just for automating the process of finding specific headers (or lack thereof)
 
 ## Useful links and tips:
 - [termcolor lib](https://pypi.org/project/termcolor/)
