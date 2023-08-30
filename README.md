@@ -34,8 +34,8 @@ Só precisa ajustar o "local" do script, dentro dele. Porque senão ele não con
 <!-- - Automatically check if sslscan is installed and. If not, then install -->
 
 ## Useful links and tips:
-- [termcolor lib]([url](https://pypi.org/project/termcolor/))
-- [ASCII Generator]([url](https://patorjk.com/software/taag/))
+- [termcolor lib](https://pypi.org/project/termcolor/)
+- [ASCII Generator](https://patorjk.com/software/taag/)
 
 ## TO-DO
 - Remove www from URLs
