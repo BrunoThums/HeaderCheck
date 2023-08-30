@@ -195,6 +195,8 @@ if __name__ == "__main__":
         print("-> show detailed errors")
         print(colored("--show-instant-errors -si ", "green", attrs=['bold']),end="")
         print("-> don't show, at the end, the urls with connection errors. Shows at the instant")
+        print(colored("--no--hc-h -uh ", "green", attrs=['bold']),end="")
+        print("-> don't pass the URL's error list to hc_h (headercheck_helper)")
         print("\n", colored("All parameters are", "light_grey"), colored("false", "light_red"), colored("by default", "light_grey"))
         sys.exit(1)
     
@@ -210,6 +212,7 @@ if __name__ == "__main__":
     debug = "--debug" in sys.argv or "-d" in sys.argv
     # True by default
     show_instant_errors = "--show-instant-errors" in sys.argv or "-si" in sys.argv
+    use_hc_h = not ("--use-hc-h" in sys.argv or "-uh" in sys.argv)
     
     specific_headers = ["Server", "Via", "X-Powered-By", "X-AspNet-Version", "Host"]
     show_logo()
@@ -258,3 +261,15 @@ if __name__ == "__main__":
             print(colored("URLs with connection error:", "red"))
             for url in url_connection_error:
                 print(url)
+    if use_hc_h:
+        # Combination of the 3 lists
+        combined_list = urls_with_timeout + url_sslerror + url_connection_error
+
+        # Removing duplicates while manteining order
+        unique_urls = list(dict.fromkeys(combined_list))
+        with open('url_list.txt', 'w') as file:
+            for url in unique_urls:
+                file.write(url + '\n')
+        
+        # Run hc_h script with the list as argument
+        subprocess.run(['hc_h', 'url_list.txt'])
