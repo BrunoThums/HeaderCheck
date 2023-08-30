@@ -1,5 +1,11 @@
 #!/bin/bash
 
+show_logo(){
+    base64 -d <<<"H4sIAAAAAAAAA52R3Q2AMAiE3zvFDWBkAUcxOQdxeIH+iPBmm34px9GSFgBI1FHELLxxyJSqpksg
+tFQHHTRxCFxCcE3Dt97Fj62ZqNGpdBCXE0vgQnDZ+aJAqi+2Zpf6RG/KA77C6Cq5FNuB2X/IpFp9
+IunHnnabYgtkb3HugsvimzdTRrd7cKw/+DlkfEVUpLjaAwdz98xGAgAA" | gunzip
+}
+
 check_headers() {
     local url="$1"
     local show_all_headers="$2"
@@ -65,6 +71,7 @@ fi
 
 target="$1"
 show_all_headers=false
+show_logo
 
 if [[ "$2" = "-h" ]]; then
     show_all_headers=true
