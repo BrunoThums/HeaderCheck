@@ -2,8 +2,7 @@
 A tool to checking headers that reveal information
 
 ## Install
-- Coming soon
-<!-- - `git clone https://github.com/BrunoThums/SSLVerifier.git; cd SSLVerifier; chmod +x setup.sh; sudo ./setup.sh`
+- `wget https://raw.githubusercontent.com/BrunoThums/HeaderCheck/main/setup.sh; chmod +x setup.sh; sudo ./setup.sh`
  É possível mudar essa instalação. Baixe a ferramenta no linux/kali, dê permissão de execução para o setup.sh e faça o commit. Assim dará pra mudar para:
 git clone https://github.com/BrunoThums/SSLVerifier.git; sudo SSLVerifier/setup.sh 
 Só precisa ajustar o "local" do script, dentro dele. Porque senão ele não consegue se apagar
@@ -15,8 +14,10 @@ Só precisa ajustar o "local" do script, dentro dele. Porque senão ele não con
   - No port required
   - Don't worry about duplicates
   - Don't worry about directories
-<!-- - hc file_with_urls.txt
-- hc single_URL-->
+- hc file_with_urls
+- hc single_URL
+- OBS: if there's some URLs with errors, save to a file and run:
+ - `hc_c file`
 
 ## What it can do?
 - (Obviously) check some headers of a single URL or a file of URLs []
@@ -41,5 +42,7 @@ Só precisa ajustar o "local" do script, dentro dele. Porque senão ele não con
 - Add (more) custom message for invalid host or error
 - Check for duplicates in URL report error list
 
+## How to remove
+- `sudo rm /usr/bin/hc; sudo rm /usr/bin/hc_h`
 
 
