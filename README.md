@@ -29,7 +29,7 @@ Só precisa ajustar o "local" do script, dentro dele. Porque senão ele não con
   - Content-Security-Police
   - Strict-Transport-Security
 
-### Parameters
+## Parameters
 - `--all-headers` or `-h` -> show all headers (yep, like a normal response header)
 - `--no-ports` or `-np` -> don't add ports 80 and 443, let it handle automatically
 - `--no-csp-hsts` or `-nr` -> don't verify CSP or HSTS
@@ -42,14 +42,17 @@ Só precisa ajustar o "local" do script, dentro dele. Porque senão ele não con
 
 ## Useful links and tips:
 - [termcolor lib](https://pypi.org/project/termcolor/)
-- [ASCII Generator](https://patorjk.com/software/taag/)
+- [ASCII Generator](https://patorjk.com/software/taag/) (this theme: slant)
+- How to print an ASCII image?
+  - (bash) Save in a txt, type `cat image.txt | gzip | base64` in terminal, copy and paste into script `base64 -d <<<"yourBase64image" | gunzip` (that's it, only ctrl+v, don't add new lines or remove new lines, leaves as it is)
+  - (python) Add a bunch of print's for each line
 
 ## TO-DO
 - Remove www from URLs
 - Add (more) custom message for invalid host or error
 - Check for duplicates in URL report error list
 
-## How to remove
+## Uninstall
 - `sudo rm /usr/bin/hc; sudo rm /usr/bin/hc_h`
 
 
