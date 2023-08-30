@@ -17,7 +17,7 @@ Só precisa ajustar o "local" do script, dentro dele. Porque senão ele não con
 - hc file_with_urls
 - hc single_URL
 - OBS: if there's some URLs with errors, save to a file and run:
-  - `hc_c file`
+  - `hc_h file`
 
 ## What it can do?
 - (Obviously) check some headers of a single URL or a file of URLs []
