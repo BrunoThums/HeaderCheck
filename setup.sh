@@ -17,7 +17,7 @@ wget "https://raw.githubusercontent.com/BrunoThums/HeaderCheck/main/hc.py"
 wget "https://raw.githubusercontent.com/BrunoThums/HeaderCheck/main/hc_h.sh"
 
 # Make the SSLVerifier.sh script executable
-chmod +x "hc_c.sh"
+chmod +x "hc_h.sh"
 
 # Move the entire directory to /usr/local/bin
 echo -e "\033[36m Moving script to path \033[0m"
