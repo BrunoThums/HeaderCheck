@@ -3,7 +3,7 @@ A tool to checking headers that reveal information
 
 ## Install
 - `wget https://raw.githubusercontent.com/BrunoThums/HeaderCheck/main/setup.sh; chmod +x setup.sh; sudo ./setup.sh`
- É possível mudar essa instalação. Baixe a ferramenta no linux/kali, dê permissão de execução para o setup.sh e faça o commit. Assim dará pra mudar para:
+<!-- É possível mudar essa instalação. Baixe a ferramenta no linux/kali, dê permissão de execução para o setup.sh e faça o commit. Assim dará pra mudar para:
 git clone https://github.com/BrunoThums/SSLVerifier.git; sudo SSLVerifier/setup.sh 
 Só precisa ajustar o "local" do script, dentro dele. Porque senão ele não consegue se apagar
 -->
