@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import sys # Used to read arguments
 import requests # Used to HTTP requestes
 import urllib3 # Control SSL warn messages
