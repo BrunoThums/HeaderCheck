@@ -22,7 +22,7 @@ chmod +x "hc_c.sh"
 # Move the entire directory to /usr/local/bin
 echo -e "\033[36m Moving script to path \033[0m"
 mv hc.py /usr/bin/hc
-mv hc_c.sh /usr/bin/hc_c
+mv hc_h.sh /usr/bin/hc_h
 echo -e "\033[36m Done! \033[0m"
 echo -e "\033[36m You can now use headercheck anywhere :) \033[0m"
 echo -e "\033[36m Goodbye! \033[0m"
