@@ -189,7 +189,7 @@ if __name__ == "__main__":
         print("-> show all response headers")
         print(colored("--no-ports -np ", "green", attrs=['bold']),end="")
         print("-> don't add ports 80 and 443. Go all https (443)")
-        print(colored("--no-csp-hsts -nr ", "green", attrs=['bold']),end="red")
+        print(colored("--no-csp-hsts -nr ", "green", attrs=['bold']),end="")
         print("-> don't verify CSP or HTST")
         print(colored("--debug -d ", "green", attrs=['bold']),end="")
         print("-> show detailed errors")
