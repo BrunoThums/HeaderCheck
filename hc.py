@@ -214,7 +214,7 @@ if __name__ == "__main__":
     show_instant_errors = "--show-instant-errors" in sys.argv or "-si" in sys.argv
     use_hc_h = not ("--use-hc-h" in sys.argv or "-uh" in sys.argv)
     
-    specific_headers = ["Server", "Via", "X-Powered-By", "X-AspNet-Version", "Host"]
+    specific_headers = ["Server", "Via", "X-Powered-By", "X-AspNet-Version", "Host", "http-server-header"]
     show_logo()
     
     try:
