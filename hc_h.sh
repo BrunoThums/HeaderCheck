@@ -39,7 +39,7 @@ check_headers() {
     response_reason=$(echo "$status_line" | awk '{$1=""; print}' | sed 's/^[ \t]*//')
     
     echo -e "$response_reason"
-    specific_headers=("Server" "Via" "X-Powered-By" "X-AspNet-Version")
+    specific_headers=("Server" "Via" "X-Powered-By" "X-AspNet-Version", "http-server-header")
     for header in "${specific_headers[@]}"; do
         value=$(grep -i "^$header:" <<< "$response" | awk '{ $1=""; print }' | sed 's/^[ \t]*//')
         if [[ -n "$value" ]]; then
