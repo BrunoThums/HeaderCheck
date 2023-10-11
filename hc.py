@@ -171,11 +171,13 @@ def check_headers(url, show_all_headers=False, show_report=True, debug=False, sh
                 print(divisor)
             url_connection_error.append(url)
 def show_logo():                                                                                                      
-    print("    __                   __               __              __    ")
-    print("   / /_  ___  ____ _____/ /__  __________/ /_  ___  _____/ /__  ")
-    print("  / __ \/ _ \/ __ `/ __  / _ \/ ___/ ___/ __ \/ _ \/ ___/ //_/  ")
-    print(" / / / /  __/ /_/ / /_/ /  __/ /  / /__/ / / /  __/ /__/ ,<     ")
-    print("/_/ /_/\___/\__,_/\__,_/\___/_/   \___/_/ /_/\___/\___/_/|_|    ")
+    print('''
+        __                   __               __              __   
+       / /_  ___  ____ _____/ /__  __________/ /_  ___  _____/ /__ 
+      / __ \/ _ \/ __ `/ __  / _ \/ ___/ ___/ __ \/ _ \/ ___/ //_/ 
+     / / / /  __/ /_/ / /_/ /  __/ /  / /__/ / / /  __/ /__/ ,<    
+    _/ /_/\___/\__,_/\__,_/\___/_/   \___/_/ /_/\___/\___/_/|_|    
+    ''')
 
 if __name__ == "__main__":
     urls_with_timeout = []  # Initialize the list to store URLs with timeout
