@@ -64,7 +64,7 @@ check_headers() {
 
 # Main code
 if [[ $# -lt 1 ]]; then
-    echo "Usage: $0 <url_or_file>"
+    echo "Usage: hc_h <url_or_file>"
     echo "    -h    show all response headers"
     exit 1
 fi
